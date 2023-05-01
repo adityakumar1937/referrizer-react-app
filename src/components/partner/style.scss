@@ -1,0 +1,45 @@
+@import "../../style-config/mixins.scss", "../../style-config/variable.scss";
+
+.partner-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/app-market.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h5 {
+    @include typography(12px, 600, 1.2);
+    color: $light-blue;
+  }
+  h2 {
+    @include typography(36px, 700, 1.2);
+    color: $dark-blue;
+    margin-top: 15px;
+  }
+  p{
+    @include typography(14px, 400, 1.5);
+    color: $grey;
+    margin-top: 15px;
+  }
+  @include small-screen {
+    height: 70vh;
+    text-align: center;
+    background-image: url("../../images/app-market-mobile.png");
+    background-size: contain;
+    background-position: right center; 
+    padding: 5% 5%;
+    h5{
+      @include typography(10px, 600, 1.2);
+    }
+    h2{
+      @include typography(24px, 700, 1.2);
+    }
+    p{
+      @include typography(14px, 400, 1.2);
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@import "../../style-config/mixins.scss", "../../style-config/variable.scss";
+
+.resources-section {
+  width: 100%;
+  height: 100vh;
+  padding: 7% 8%;
+  .header{
+    text-align: center;
+
+    h5 {
+      @include typography(12px, 600, 1.2);
+      color: $light-blue;
+    }
+    h2 {
+      @include typography(36px, 700, 1.2);
+      color: $dark-blue;
+      margin-top: 15px;
+    }
+    p{
+      @include typography(16px, 400, 1.5);
+      color: $grey;
+      margin-top: 15px;
+    }
+  }
+  .resources-body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+  .left {
+    width: 50%;
+    .inactive {
+      display: none;
+    }
+
+    .tools {
+      .tool {
+        width: 80%;
+        margin: 50px 25px;
+        cursor: pointer;
+        position: relative;
+        transition: all ease-in-out 1s;
+
+        h4 {
+          color: $dark-blue;
+          @include typography(20px, 700, 1.2);
+          margin-bottom: 10px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: -20px;
+          top: -10px;
+          width: 5px;
+          height: 40px;
+          background-color: #EBECEF;
+          border-radius: 50px;
+        }
+        &::before:hover {
+          background-color: $light-blue;
+        }
+        div {
+          display: none;
+        }
+        p {
+          color: $grey;
+          margin-bottom: 10px;
+          @include typography(16px, 400, 1.5);
+        }
+        a {
+          text-decoration: none;
+          color: $light-blue;
+          @include typography(12px, 600, 1);
+        }
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    @include small-screen {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+  .active {
+    display: block !important;
+    transition: all ease-in-out 0.5s;
+  }
+  @include small-screen {
+    flex-direction: column;
+    .header {
+      h5{
+        @include typography(10px, 600, 1.2);
+      }
+      h2{
+        @include typography(24px, 700, 1.2);
+      }
+      p{
+        width: 303px;
+        @include typography(14px, 400, 1.2);
+      }
+    }
+    .resources-body{
+      flex-direction: column;
+      align-items: flex-start;
+      .left{
+        width: 100%;
+        .tools{
+          .tool{
+            h4{
+              @include typography(18px, 700, 1.2);
+            }
+            .active{
+              @include typography(14px, 400, 1.5);
+            }
+          }
+        }
+      }
+    }
+  }
+}

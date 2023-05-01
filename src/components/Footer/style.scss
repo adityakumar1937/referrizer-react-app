@@ -1,0 +1,42 @@
+@import "../../style-config/mixins.scss", "../../style-config/variable.scss";
+
+.footer-grid {
+  width: 100%;
+  height: 40vh;
+  padding: 6% 8%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  background-color: $black;
+  @include small-screen {
+    height: 100vh;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      .footer-column {
+        &:first-child {
+          display: none;
+      }
+    }
+  }
+  .footer-column {
+    h4 {
+      color: $white;
+      @include typography(14px, 700, 1.2);
+    }
+    li {
+      list-style: none;
+      
+      a {
+        text-decoration: none;
+        color: $grey;
+        @include typography(14px, 300, 2.4);
+      }
+    }
+  }
+@include small-screen {
+  padding: 16% 8%;
+  gap: 50px 0px;
+}
+}

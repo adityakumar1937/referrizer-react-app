@@ -1,0 +1,66 @@
+@import "../../style-config/mixins.scss", "../../style-config/variable.scss";
+
+.dev-section {
+  width: 100%;
+  height: 140vh;
+  padding: 7% 8%;
+  background-color: $off-white;
+  .dev-header {
+    text-align: center;
+    h5 {
+      @include typography(12px, 600, 1.2);
+      color: $light-blue;
+    }
+    h2 {
+      @include typography(36px, 700, 1.2);
+      color: $dark-blue;
+      margin-top: 15px;
+    }
+    p {
+      @include typography(16px, 400, 1.5);
+      color: $grey;
+      margin-top: 15px;
+    }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .doc-button {
+      width: 15%;
+      text-align: center;
+    }
+  }
+  @include small-screen {
+    height: 90vh;
+    .dev-header {
+      h5 {
+        @include typography(10px, 600, 1.2);
+      }
+      h2 {
+        @include typography(24px, 700, 1.2);
+      }
+      p {
+        width: 335px;
+        @include typography(14px, 400, 1.2);
+      }
+    }
+    img {
+      width: 100%;
+      scale: 1.2;
+      height: 250px;
+    }
+    .btn {
+      .doc-button {
+        width: 100%;
+        span{
+          .text{
+            @include typography(15px, 600, 19px);
+          }
+        }
+      }
+    }
+  }
+}

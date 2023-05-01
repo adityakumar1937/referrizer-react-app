@@ -1,0 +1,136 @@
+@import "../../style-config/mixins.scss", "../../style-config/variable.scss";
+
+.banner-section {
+  width: 100%;
+  height: 80vh;
+  padding: 7% 8%;
+  .banner-body {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    background-color: $light-blue;
+    text-align: center;
+    .image-frame {
+      position: absolute;
+      top: -100px;
+    }
+    .ellipse-1 {
+      width: 40px;
+      height: 40px;
+      box-shadow: 0px 0px 50px -5px rgba(150, 211, 140, 1);
+      border-radius: 50%;
+      position: absolute;
+      background-color: #96d38c;
+      left: -20px;
+      top: 90px;
+      @include small-screen {
+        top: 40px;
+        left: -30px;
+      }
+    }
+    .ellipse-2 {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 40px -5px rgba(251, 62, 5, 1);
+      position: absolute;
+      background-color: #fb3e05;
+      left: 100px;
+      bottom: -30px;
+      @include small-screen {
+        width: 50px;
+        height: 50px;
+        left: 20px;
+        bottom: -30px;
+      }
+    }
+    .ellipse-3 {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 20px -5px rgba(255, 193, 7, 1);
+      position: absolute;
+      background-color: #ffc107;
+      right: 60px;
+      bottom: -30px;
+      @include small-screen {
+        width: 40px;
+        height: 40px;
+        right: 40px;
+        bottom: -20px;
+      }
+    }
+  }
+  .content {
+    h2 {
+      color: $white;
+      margin-top: 70px;
+      @include typography(36px, 700, 1.2);
+    }
+    p {
+      color: $white;
+      margin: 15px 0;
+      @include typography(16px, 400, 1.5);
+    }
+    .btn {
+      width: 100%;
+      div {
+        display: flex;
+        justify-content: center;
+        .primary {
+          max-width: 270px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0px 4px 45px rgba(107, 123, 156, 0.1);
+          border-radius: 8px;
+          margin-top: 20px;
+          span {
+            padding: 25px 45px;
+            @include typography(16px, 700, 1.2);
+          }
+        }
+      }
+    }
+  }
+  @include small-screen {
+    height: 50vh;
+    margin: 8% 0;
+    padding: 0;
+    .banner-body {
+      border-radius: 0;
+      .image-frame {
+        width: 80%;
+        top: -60px;
+      }
+    }
+    .content {
+      margin-top: -60px;
+      padding: 0 10%;
+      h2 {
+        @include typography(24px, 700, 1.2);
+      }
+      p {
+        @include typography(16px, 400, 1.5);
+      }
+      .btn {
+        div {
+          .primary {
+            width: 100%;
+            height: 50px;
+
+            span {
+              padding: 15px 45px;
+              @include typography(16px, 700, 1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}

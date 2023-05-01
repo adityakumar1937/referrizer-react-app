@@ -1,0 +1,126 @@
+@import "../../style-config/mixins.scss", "../../style-config/variable.scss";
+
+.testimonial-section {
+  width: 100%;
+  height: 100vh;
+  padding: 7% 8%;
+  .testimonial-header {
+    text-align: center;
+    h5 {
+      @include typography(12px, 600, 1.2);
+      color: $light-blue;
+    }
+    h2 {
+      @include typography(36px, 700, 1.2);
+      color: $dark-blue;
+      margin-top: 15px;
+    }
+    p {
+      @include typography(16px, 400, 1.5);
+      color: $grey;
+      margin-top: 15px;
+    }
+  }
+  .testimonial-body {
+    display: flex;
+    margin: 4% 0;
+    .left {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+    .right {
+      width: 50%;
+      flex-direction: column;
+      .testimonial-slider {
+        width: 100%;
+        padding: 0 0%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        gap: 150px;
+        .slides {
+          min-width: 80%;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.5s ease-in-out;
+          .title {
+            color: $dark-blue;
+            margin-bottom: 15px;
+            @include typography(35px, 700, 1);
+          }
+          .profile {
+            margin-bottom: 20px;
+            color: $grey;
+            @include typography(18px, 300, 1.5);
+          }
+          .review {
+            color: $grey;
+            @include typography(16px, 400, 1.5);
+          }
+          .slide {
+            width: 100%;
+            flex-shrink: 0;
+            margin-right: 25px;
+          }
+        }
+      }
+      .testimonial-toggle {
+        width: 100%;
+        display: flex;
+        margin: 25px 0;
+        gap: 10px;
+        @include small-screen {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  @include small-screen {
+    height: 120vh;
+    .testimonial-header {
+      h5 {
+        @include typography(10px, 600, 1.2);
+      }
+      h2 {
+        @include typography(24px, 700, 1.2);
+      }
+      p {
+        width: 335px;
+        @include typography(14px, 400, 1.2);
+      }
+    }
+    .testimonial-body {
+      flex-direction: column;
+      .left {
+        margin: 50px 0;
+        width: 100%;
+        img {
+          min-width: 80%;
+        }
+      }
+      .right {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        .testimonial-slider {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden !important;
+          .slides {
+            margin: 0 25px;
+            min-width: 100% !important;
+            width: 100%;
+            overflow: hidden;
+          }
+          .review {
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+  }
+}

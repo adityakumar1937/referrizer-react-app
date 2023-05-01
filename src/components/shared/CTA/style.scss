@@ -1,0 +1,98 @@
+@import "../../../style-config/mixins.scss",
+  "../../../style-config/variable.scss";
+
+.call-to-action {
+  border: 2px solid $light-blue;
+  border-radius: 7px;
+  padding: 4px 12px;
+}
+
+.primary {
+  background-color: $white;
+  .text {
+    color: $light-blue;
+    @include typography(12px, 500, 1);
+  }
+  &:hover{
+    
+  }
+}
+
+.secondary {
+  background-color: $light-blue;
+  margin-left: 10px;
+  .text {
+    color: $white;
+    @include typography(12px, 500, 0);
+  }
+}
+
+.hero-cta-one {
+  background-color: $white;
+  padding: 8px 30px;
+  border-radius: 10px;
+  margin-right: 20px;
+  .text {
+    color: $light-blue;
+    @include typography(12px, 500, 0);
+  }
+}
+
+.hero-cta-two {
+  background-color: $light-blue;
+  padding: 8px 30px;
+  border-radius: 10px;
+  .text {
+    color: $white;
+    @include typography(12px, 500, 0);
+  }
+  .play-icon {
+    color: $white;
+    font-size: 28px;
+    vertical-align: middle;
+    svg {
+      margin-top: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.dev-doc-btn {
+  background-color: $white;
+  border-radius: 10px;
+  .text {
+    color: $light-blue;
+    @include typography(12px, 500, 0);
+  }
+  .doc-icon {
+    color: $light-blue;
+    font-size: 28px;
+    vertical-align: middle;
+    svg {
+      margin-top: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.prev {
+  color: $light-blue;
+
+  svg {
+    border: 2px solid $light-blue;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 40px;
+  }
+}
+
+.next {
+  color: $light-blue;
+  font-weight: 600;
+  svg {
+    border: 2px solid $light-blue;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 40px;
+  }
+}
