@@ -14,7 +14,7 @@ const Intro = () => {
           <h1>
             Become a Referrizer <br /> API Integration Partner
           </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Join our API Integration Partner Program and Grow Your Business.</p>
           <div className="button-group">
             <CtaHeroOne text="Get Started" />
             <CtaHeroTwo text="Play Video" />

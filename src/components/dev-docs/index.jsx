@@ -10,8 +10,7 @@ const Devdocs = () => {
         <h5>Dev Docs</h5>
         <h2>Dev Documentaion <br /> Integrate your application in minutes</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel aliquam,
-          massa nec hendrerit laoreet.
+          Streamline Integration with Comprehensive Dev Documentation
         </p>
         <img src="./images/editor-2.png" alt="Editor" />
         <Slider/>

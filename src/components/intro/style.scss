@@ -7,10 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
- 
+
   @include small-screen {
-    overflow: hidden;
-    background-image: url("../../images/intro-bg-mobile.png");
+    // overflow: hidden;
+    background: $light-blue;
   }
 
   .hero {
@@ -117,8 +117,8 @@
   @include small-screen {
     width: 88.4px;
     height: 41.6px;
-    left: 10px;
-    bottom: 0;
+    left: 20px;
+    bottom: 20px;
     border-radius: 10.4px;
     box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.05);
     div {
@@ -148,22 +148,23 @@
     h1 {
       color: $light-blue;
       @include typography(48px, 700, 1);
-
       span {
         color: $dark-blue;
       }
     }
     p {
+      width: inherit;
       margin: 0 !important;
       color: $grey;
+      display: inline-block;
       @include typography(16px, 400, 1.5);
     }
   }
   @include small-screen {
     width: 73.6px;
     height: 41.6px;
-    left: 290px;
-    bottom: 120px;
+    left: 300px;
+    bottom: 170px;
     border-radius: 10.4363px;
     box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.05);
     div {
@@ -174,7 +175,6 @@
         @include typography(5px, 400, 1.5);
       }
     }
-    
   }
 }
 
@@ -215,12 +215,12 @@
     width: 82px;
     height: 39px;
     left: 20px;
-    bottom: 160px;
+    bottom: 190px;
     border-radius: 10.4363px;
     box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.05);
     div {
       span {
-        svg{
+        svg {
           font-size: 20px;
           margin: 5px;
         }
@@ -228,7 +228,7 @@
       h4 {
         @include typography(8px, 600, 1.2);
         margin-left: 10px;
-        span{
+        span {
           @include typography(8px, 600, 1.2);
         }
       }
@@ -250,27 +250,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @include small-screen {
-    width: 160px;
-    height: 70px;
-    left: 110px;
-    bottom: 50px;
-    border-radius: 10.4363px; 
-  }
   div {
     text-align: center;
     h2 {
       color: $light-blue;
-      @include typography(18px, 700, 1);
+      @include typography(36px, 700, 1);
       span {
         color: $dark-blue;
       }
     }
     p {
-      color: $grey;
       margin: 0 !important;
-      @include typography(8px, 400, 1.5);
+      color: $grey;
+      @include typography(16px, 400, 1.5);
+    }
+  }
+
+  @include small-screen {
+    width: 160px;
+    height: 70px;
+    left: 125px;
+    bottom: 80px;
+    border-radius: 10.4363px;
+    div {
+      h2 {
+        @include typography(18px, 700, 1);
+      }
+      p {
+        
+        @include typography(8px, 400, 1.5);
+      }
     }
   }
 }

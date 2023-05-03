@@ -42,11 +42,14 @@
         background-color: #f4f6fe;
         padding: 10px 24px;
         border-radius: 10px;
+
         h3 {
           @include typography(18px, 600, 1.2);
+          cursor: pointer;
         }
         .faq-toggle {
           color: $light-blue;
+          cursor: pointer;
           svg {
             font-size: 38px;
           }
@@ -87,25 +90,24 @@
     }
 
     .faq-menu {
-          .faq-items {
-            .question {
-              padding: 8px 12px;
-              h3 {
-                @include typography(14.2431px, 600, 1.5);
-              }
-              .faq-toggle {
-                svg {
-                  font-size: 24px;
-                }
-              }
+      .faq-items {
+        .question {
+          padding: 8px 12px;
+          h3 {
+            @include typography(14.2431px, 600, 1.5);
+          }
+          .faq-toggle {
+            svg {
+              font-size: 24px;
             }
-            .solution{
-              p{
-                @include typography(14px, 400, 1.5);
-              }
-
-            }
+          }
+        }
+        .solution {
+          p {
+            @include typography(14px, 400, 1.5);
           }
         }
       }
     }
+  }
+}

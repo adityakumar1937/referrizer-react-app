@@ -12,7 +12,7 @@
   background-color: $off-white;
 
   .slides-container {
-    width: 75.3%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,6 +53,7 @@
 
       svg {
         border: none;
+        color: $dark-blue;
       }
     }
     .prev {
@@ -60,28 +61,32 @@
     }
     .next {
       right: 180px;
-    }
-  }
-
-  @include small-screen {
-    height: 5vh;
-    .slides-container {
-      .slides {
-        width: 50px;
-        height: 50px;
-      
+      svg {
+        polygon {
+          fill: $dark-blue;
+        }
       }
-      .carousel-button {
-        .prev,
-        .next {
+    }
+
+    @include small-screen {
+      height: 5vh;
+      .slides-container {
+        .slides {
           width: 50px;
           height: 50px;
         }
-        .prev{
-          left: 10px;
-;        }
-        .next{
-          right: 30px;
+        .carousel-button {
+          .prev,
+          .next {
+            width: 50px;
+            height: 50px;
+          }
+          .prev {
+            left: 10px;
+          }
+          .next {
+            right: 400px;
+          }
         }
       }
     }

@@ -9,7 +9,7 @@ const CommunityBanner = () => {
         <img className="image-frame" src="./images/frame.png" alt="Frame" />{" "}
         <div className="content">
           <h2>FREE Account for developer, No cost to join</h2>
-          <p>Lorem ipsum dolor sit amet, ea vel bonorum facilisis.</p>
+          <p>Unleash Your Creativity with Referrizer's Free Developer Account.</p>
           <div className="btn">
             <div>
               <CtaPrimary text="Join the Community" />

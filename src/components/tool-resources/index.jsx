@@ -11,9 +11,9 @@ const Resources = () => {
   return (
     <div className="resources-section">
     <div className="header">
-          <h5>Tools & Resouces</h5>
+          <h5>Tools & Resources</h5>
           <h2>Tools & Other Resouces</h2>
-          <p>Consectetur adipiscing elit, consectetur adipiscing amet.</p>
+          <p>Power Up Your Marketing Game with These Tools and Resources</p>
         </div>
         <div className="resources-body">
       <div className="left">
@@ -22,9 +22,7 @@ const Resources = () => {
             <h4 onClick={() => handleToggle(0)}>Visual Builder</h4>
             <div className={activeIndex === 0 ? "active" : ""}>
               <p>
-                Lorem ipsum dolor sit amet consectetur. ipsum dolor sit amet
-                consectetur. Video library of what our customer says, Tutorials,
-                App Integration and more
+              A user-friendly drag-and-drop interface for creating customized marketing campaigns and landing pages.
               </p>
               <a href="/">View More</a>
             </div>
@@ -33,9 +31,7 @@ const Resources = () => {
             <h4 onClick={() => handleToggle(1)}>Videos Library</h4>
             <div className={activeIndex === 1 ? "active" : ""}>
               <p>
-                Lorem ipsum dolor sit amet consectetur. ipsum dolor sit amet
-                consectetur. Video library of what our customer says, Tutorials,
-                App Integration and more
+              An extensive collection of educational videos and tutorials to help users learn how to use Referrizer and optimize their marketing strategy.
               </p>
               <a href="/">View More</a>
             </div>
@@ -45,9 +41,7 @@ const Resources = () => {
             <h4 onClick={() => handleToggle(2)}>Quick Support</h4>
             <div className={activeIndex === 2 ? "active" : ""}>
               <p>
-                Lorem ipsum dolor sit amet consectetur. ipsum dolor sit amet
-                consectetur. Video library of what our customer says, Tutorials,
-                App Integration and more
+              Referrizer's dedicated support team is available to provide assistance and resolve issues quickly and efficiently.
               </p>
               <a href="/">View More</a>
             </div>

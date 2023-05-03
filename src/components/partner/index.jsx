@@ -7,7 +7,7 @@ const Partner = () => {
         <div className="content">
             <h5>App Partner</h5>
             <h2>Join our thriving App Marketplace</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet culpa fugiat perferendis numquam sapiente?</p>
+            <p>Expand your reach and grow your business with Referrizer's App Marketplace</p>
         </div>
     </div>
   );

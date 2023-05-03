@@ -32,6 +32,9 @@
     .right {
       width: 50%;
       flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .testimonial-slider {
         width: 100%;
         padding: 0 0%;
@@ -39,12 +42,13 @@
         align-items: center;
         overflow: hidden;
         gap: 150px;
+        
         .slides {
           min-width: 80%;
           overflow: hidden;
           display: flex;
           flex-direction: column;
-          transition: transform 0.5s ease-in-out;
+          
           .title {
             color: $dark-blue;
             margin-bottom: 15px;
@@ -79,7 +83,7 @@
   }
 
   @include small-screen {
-    height: 120vh;
+    height: 100vh;
     .testimonial-header {
       h5 {
         @include typography(10px, 600, 1.2);
@@ -93,12 +97,13 @@
       }
     }
     .testimonial-body {
+      margin: 0 0;
       flex-direction: column;
       .left {
-        margin: 50px 0;
+        margin: 20px 0;
         width: 100%;
         img {
-          min-width: 80%;
+          min-width: 100%;
         }
       }
       .right {

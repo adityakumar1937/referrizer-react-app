@@ -8,8 +8,7 @@ const Success = () => {
         <h5>Success Stories</h5>
         <h2>Success Stories</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel aliquam,
-          massa nec hendrerit laoreet.
+        See How Referrizer Helped Businesses Grow and Succeed
         </p>
       </div>
 

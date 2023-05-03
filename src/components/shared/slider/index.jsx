@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaJava, FaCode, FaAngular } from "react-icons/fa";
 import { DiReact, DiJavascript1, DiNodejs } from "react-icons/di";
-import { SiTypescript, SiMongodb, SiMysql, SiDocker } from "react-icons/si";
-import {
-  FcNext,
-  FcPrevious
-} from "react-icons/fc";
+import { SiSvelte, SiMongodb, SiMysql, SiDocker } from "react-icons/si";
 import "./style.scss";
 
 const Carousel = () => {
@@ -17,19 +13,18 @@ const Carousel = () => {
     <DiJavascript1 />,
     <DiNodejs />,
     <DiReact />,
-    <SiTypescript />,
+    <SiSvelte />,
     <SiMongodb />,
     <SiMysql />,
     <SiDocker />,
   ];
 
-  const nextSlide = () => {
-    setActiveSlide((activeSlide + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setActiveSlide((activeSlide + slides.length - 1) % slides.length);
-  };
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setActiveSlide((activeSlide + 1) % slides.length);
+    }, 3000);
+    return () => clearInterval(intervalId);
+  }, [activeSlide, slides.length]);
 
   return (
     <div className="carousel-container">
@@ -65,14 +60,7 @@ const Carousel = () => {
           {slides[(activeSlide + 9) % slides.length]}
         </div>
 
-        <div className="carousel-button">
-          <div className="prev" onClick={prevSlide}>
-            <FcPrevious />
-          </div>
-          <div className="next" onClick={nextSlide}>
-            <FcNext />
-          </div>
-        </div>
+    
       </div>
     </div>
   );

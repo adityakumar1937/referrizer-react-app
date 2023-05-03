@@ -75,6 +75,7 @@
     .menu-icons {
       display: block;
       display: flex;
+      cursor: pointer;
       .navbar-icon {
         margin-left: 20px;
       }
@@ -139,6 +140,18 @@
         &:hover {
           rotate: 180deg;
           transition: all ease-in-out 300ms;
+          animation: navbar 600ms ease-in-out 0s 1 normal both;
+      @keyframes navbar {
+        0% {
+          opacity: 0;
+          transform: translateY(-250px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
         }
       }
     }

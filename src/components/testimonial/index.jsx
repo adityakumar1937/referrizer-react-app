@@ -8,22 +8,22 @@ const Testimonial = () => {
 
   const slides = [
     {
-      title: "Marshell A.",
-      profile: "Lead Developer",
+      title: "John Smith",
+      profile: "Software Developer",
       review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat nibh ac faucibus feugiat. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc id risus vel eros vulputate tristique.",
+        "Referrizer has been a game-changer for my business. With their email and SMS campaigns, I can easily stay in touch with my customers and keep them coming back. And the automated review requests have helped us get more positive reviews than ever before!",
     },
     {
-      title: "Marshell B.",
-      profile: "Lead Developer",
+      title: "Sarah Lee",
+      profile: "Network Administrator",
       review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat nibh ac faucibus feugiat. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc id risus vel eros vulputate tristique.",
+        "We love Referrizer's all-in-one marketing platform. It has everything we need to manage our campaigns, track our performance, and engage with our customers. Plus, the customer support is top-notch!",
     },
     {
-      title: "Marshell C.",
-      profile: "Lead Developer",
+      title: "Tom Johnson",
+      profile: "Cybersecurity Analyst",
       review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat nibh ac faucibus feugiat. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc id risus vel eros vulputate tristique.",
+        "Since we started using Referrizer, our business has seen a significant increase in revenue. The email and SMS campaigns are easy to use and highly effective, and the online reputation management tools have helped us maintain a positive online presence.",
     },
   ];
 
@@ -41,8 +41,7 @@ const Testimonial = () => {
         <h5>Testimonials</h5>
         <h2>What partners says about us</h2>
         <p>
-          We Create dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-          eirmod…
+        Our Collaborators Share Their Experience with Referrizer
         </p>
       </div>
       <div className="testimonial-body">
